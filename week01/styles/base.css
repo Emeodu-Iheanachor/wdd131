@@ -1,0 +1,220 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2c4d70; /* Matches screenshot top header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header #course-title {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation - Flexbox */
+.navigation {
+    display: flex;
+    justify-content: center; /* evenly space links */
+    background-color: #3c4f5c; /* darker nav bar */
+    padding: 0.5rem 0;
+    gap: 15rem; /* space between links */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #f4f4f9;
+    color: #2c4d70;
+    border-radius: 4px;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ul styles */
+ul {
+    padding-left: 25px;
+    text-align: left;
+    padding-top: 20px;
+    
+}
+
+.resource-list li {
+    margin-bottom: 35px;
+}
+
+
+/* Main Grid Layout */
+main .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left column bigger */
+    gap: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba (0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #bebbbb;
+    padding: 0.1rem;
+}
+
+/* Card Header */
+.card h2 {
+    background-color: #2c4d70;
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px 4px 0 0;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+/* Card Images */
+.card img {
+    max-width:20%;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 1rem;
+    float: right;
+    box-shadow:0 0 40px rgba (0,0,0,0.2);
+    padding-right: 8px;
+}
+
+/* Card text content */
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    float: center;
+    text-align: left;
+    padding-bottom: 8px;
+    padding-left: 8px;
+
+}
+
+/* Card Aside Styles */
+.card aside {
+    font-size:large;
+    font-style: normal;
+    color:#333;
+    float: center;
+    border-bottom: 1px solid #bbb6b6;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+      
+  
+}
+
+/* Overall grid container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image card */
+.flag-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flag-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.flag-card figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Text section */
+.flag-text p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .flag-card img {
+        max-width: 80%;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #2c4d70;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer #lastModified {
+    color: #fffa65; /* Highlight last modified */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main .grid-container {
+        grid-template-columns: 1fr; /* stack cards */
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
