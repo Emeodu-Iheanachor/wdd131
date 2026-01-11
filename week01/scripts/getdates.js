@@ -1,5 +1,5 @@
-// Populate current year
+// Current Year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Populate last modified date
+// Last Modified Date
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
