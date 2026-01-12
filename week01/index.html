@@ -3,77 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 course: Dynamic Web Fundamentals by Emeodu R.C. Iheanachor – landing pages and learning activities.">
+    <meta name="description" content="WDD 131 course: Dynamic Web Fundamentals by Emeodu R.C. Iheanachor – landing page and learning activities.">
     <meta name="author" content="Emeodu, Iheanachor">
+
     <title>WDD 131 - Dynamic Web Fundamentals - Emeodu, R. C. Iheanachor</title>
-    <!-- Google Fonts -->
+
+    <!-- REQUIRED Preconnect links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- REQUIRED Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <!-- CSS -->
+
+    <!-- REQUIRED CSS Path -->
     <link rel="stylesheet" href="styles/base.css">
-    <!-- JavaScript -->
+
+    <!-- External JS -->
     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <!-- Header -->
     <header>
-         <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+
         <nav class="navigation">
-    <ul>
-        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scriptures</a></li>
-        <li><a href="#">Final Project</a></li>
-    </ul>
-</nav>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng" target="_blank" rel="noopener">Scriptures</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <h1>Emeodu, R. C. Iheanachor</h1>
+
         <div class="grid-container">
-            <!-- Left Card -->
+            <!-- ABOUT ME CARD -->
             <section class="card">
                 <h2>About Me</h2>
                 <img src="images/image1.jpg" alt="Emeodu's Photo">
-                <p>Hello! I am Emeodu Raphael Chidiebere Iheanachor from Port Harcourt, Rivers State, Nigeria. 
-                I like administrative work, job analysis and design. I am currently studying Web Design and Development at BYU.
-                I am eager to create my own website and gain more experience in the labour-market.</p>
+
+                <p>Hello! I am Emeodu Raphael Chidiebere Iheanachor from Port Harcourt, Nigeria. I enjoy administrative work, job analysis, and web development. I am currently studying Web Design and Development at BYU–Idaho.</p>
+
                 <aside>A Brief History of Nigeria</aside>
+
                 <div class="container">
                     <figure class="flag-card">
                         <img src="images/nigeria_flag.jpg" alt="Nigeria Flag">
                         <figcaption>Official Flag of Nigeria</figcaption>
                     </figure>
+
                     <div class="flag-text">
                         <p>
-                            Nigeria, officially the Federal Republic of Nigeria, is a country in West Africa.
-                            It is the most populous country in Africa and the seventh most populous globally,
-                            with over 200 million people. Nigeria is known for its diverse culture, rich history,
-                            and abundant natural resources including oil and gas.
+                            Nigeria, officially the Federal Republic of Nigeria, is the most populous nation in Africa with rich cultural diversity and vast natural resources.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- Right Card -->
+            <!-- RESOURCES CARD -->
             <section class="card">
                 <h2>Web Dev Resources</h2>
+
                 <ul class="resource-list">
                     <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
                     <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
                     <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
                     <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Placeholder</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></li>
                 </ul>
             </section>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🌴 Emeodu, R. C. Iheanachor 🌴 Port Harcourt 🌴 Nigeria.</p>
+        <p>&copy; <span id="currentyear"></span> 🌴Emeodu, R. C. Iheanachor 🌴 Port Harcourt🌴 Nigeria</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>
