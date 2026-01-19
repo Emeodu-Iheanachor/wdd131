@@ -7,7 +7,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: #263238;
+    background-color: #05557e;
     color: white;
     padding: 1rem;
     position: relative;
@@ -33,7 +33,7 @@ header h1 {
 nav {
     display: none;
     flex-direction: column;
-    background-color: #37474F;
+    background-color: #251a36;
     padding: 1rem;
     gap: 1rem;
     justify-content: space-around;   /* Even spacing */
@@ -87,7 +87,7 @@ figcaption {
 
 /* FOOTER */
 footer {
-    background-color: #263238;
+    background-color: #26056d;
     color: white;
     text-align: center;
     padding: 1rem;
