@@ -1,0 +1,14 @@
+/* Media Query for Screens ≥ 500px */
+@media screen and (min-width: 500px) {
+
+    /* Header becomes black with white text */
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Main becomes 2 equal columns */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,91 @@
+/* Google Font */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #263238;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* HAMBURGER */
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+/* NAV MENU - initially hidden (mobile) */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #37474F;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #546E7A;
+}
+
+/* MAIN */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* GALLERY GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+figure {
+    background: #eceff1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
