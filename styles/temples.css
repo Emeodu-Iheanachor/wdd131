@@ -36,7 +36,10 @@ nav {
     background-color: #37474F;
     padding: 1rem;
     gap: 1rem;
+    display: flex;
+    justify-content: center;
 }
+
 
 nav a {
     color: white;
