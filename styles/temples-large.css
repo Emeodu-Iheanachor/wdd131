@@ -31,11 +31,12 @@
 
     }
 
-    .figure {
-        size: 100%;
-
-
+    
+    .gallery {
+    figure {
+        margin: 10px;
     }
+}
 
 
     
