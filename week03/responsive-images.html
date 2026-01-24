@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Images</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/responsive-images.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <div class="hero">
+    <picture>
+      <!-- Large image -->
+      <source 
+        media="(min-width: 1000px)" 
+        srcset="images/week03/hero-large.webp">
+
+      <!-- Medium image -->
+      <source 
+        media="(min-width: 500px)" 
+        srcset="images/week03/hero-medium.webp">
+
+      <!-- Small image (fallback) -->
+      <img 
+        src="images/week03/hero-small.webp" 
+        alt="Beautiful landscape used as a hero banner"
+        width="1500"
+        height="750">
+    </picture>
+  </div>
+</main>

@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+
+  .hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* OVERLAY LAYER */
+  .info-grid {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    pointer-events: none;
+  }
+
+  .card {
+    position: absolute;
+    width: 320px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    pointer-events: auto;
+  }
+
+  /* DATA — TOP LEFT */
+  .data-card {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  /* WEATHER — BOTTOM RIGHT */
+  .weather-card {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  /* HIDE SVG ON DESKTOP */
+  .weather-icon {
+    display: none;
+  }
+
+  /* EMOTICON — DESKTOP ONLY */
+  .weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,81 @@
+:root {
+  --green: #008753;
+  --dark-green: #006a4e;
+  --white: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--green);
+  color: #111;
+}
+
+/* HEADER */
+header {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-bottom: 10px solid var(--white);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* INFO GRID — STACKED */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* CARDS */
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* CARD HEADERS */
+.card h2 {
+  background: var(--dark-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: -1rem -1rem 1rem -1rem;
+  font-size: 1.2rem;
+}
+
+/* WEATHER SVG — MOBILE ONLY */
+.weather-icon {
+  width: 48px;
+  margin: 0.5rem 0;
+}
+
+/* FOOTER */
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  border-top: 10px solid var(--white);
+}
