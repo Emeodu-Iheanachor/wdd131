@@ -1,3 +1,4 @@
+/* PLACE LARGE CSS */
 @media (min-width: 768px) {
 
   .hero {
@@ -35,6 +36,14 @@
     left: 2rem;
   }
 
+  .data-card::after {
+  content: "Data";
+  display: block;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
   /* WEATHER — BOTTOM RIGHT */
   .weather-card {
     bottom: 2rem;
@@ -52,3 +61,4 @@
     font-size: 1.2rem;
   }
 }
+/*EOF */

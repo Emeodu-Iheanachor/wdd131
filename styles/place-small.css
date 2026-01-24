@@ -79,3 +79,14 @@ footer {
   font-size: 0.9rem;
   border-top: 10px solid var(--white);
 }
+
+/* MEDIA QUERY — REQUIRED FOR ASSIGNMENT */
+@media (min-width: 768px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    font-size: 2.5rem;
+  }
+}
