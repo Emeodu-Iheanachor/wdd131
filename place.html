@@ -18,18 +18,19 @@
   </header>
 
   <main>
-    <!-- HERO -->
+
+    <!-- HERO WITH OVERLAY CARDS -->
     <section class="hero">
+
       <picture>
         <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
-        <img src="images/nigeria-small.webp" alt="Scenic view of Nigeria" width="800" height="400">
+        <img src="images/nigeria-small.webp"
+             alt="Scenic view of Nigeria"
+             width="800"
+             height="400">
       </picture>
-    </section>
 
-    <!-- INFO GRID -->
-    <section class="info-grid">
-
-      <!-- DATA CARD -->
+      <!-- DATA CARD (TOP LEFT) -->
       <section class="card data-card">
         <h2>Data</h2>
         <ul>
@@ -44,13 +45,14 @@
         </ul>
       </section>
 
-      <!-- WEATHER CARD -->
+      <!-- WEATHER CARD (BOTTOM RIGHT) -->
       <section class="card weather-card">
         <h2>Weather</h2>
 
-        <!-- JPG ICON (MOBILE ONLY) -->
-       <img class="weather-icon" src="images/weather.jpg" alt="Weather icon">
-
+        <!-- SVG ICON -->
+        <img class="weather-icon"
+             src="images/weather.svg"
+             alt="Partly cloudy icon">
 
         <ul>
           <li><strong>Temperature:</strong> <span id="temp">30</span> °C</li>
@@ -67,5 +69,6 @@
     <p>&copy; <span id="current-year"></span> 🌼 Emeodu R. C. Iheanachor 🌼 Port Harcourt 🌼 Nigeria.</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
+
 </body>
 </html>

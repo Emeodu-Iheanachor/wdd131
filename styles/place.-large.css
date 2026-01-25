@@ -1,4 +1,5 @@
-/* PLACE LARGE CSS */
+/* place-large.css */
+
 @media (min-width: 768px) {
 
   .hero {
@@ -13,52 +14,25 @@
     display: block;
   }
 
-  /* OVERLAY LAYER */
-  .info-grid {
-    position: absolute;
-    inset: 0;
-    padding: 2rem;
-    pointer-events: none;
-  }
-
   .card {
     position: absolute;
-    width: 320px;
-    background: rgba(255,255,255,0.9);
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
 
-  /* DATA — TOP LEFT */
+  /* 🔹 DATA CARD — TOP LEFT */
   .data-card {
-    top: 2rem;
-    left: 2rem;
+    top: 20px;
+    left: 20px;
   }
 
-  .data-card::after {
-  content: "Data";
-  display: block;
-  font-size: 0.8rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-  /* WEATHER — BOTTOM RIGHT */
+  /* 🔹 WEATHER CARD — BOTTOM RIGHT */
   .weather-card {
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 20px;
+    right: 20px;
   }
 
-  /* HIDE SVG ON DESKTOP */
-  .weather-icon {
-    display: none;
-  }
-
-  /* EMOTICON — DESKTOP ONLY */
-  .weather-card h2::after {
-    content: " ⛅";
-    font-size: 1.2rem;
-  }
 }
-/*EOF */

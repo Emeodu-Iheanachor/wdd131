@@ -30,7 +30,9 @@ header {
 
 /* HERO */
 .hero {
-  position: relative;
+  position: relative; /* REQUIRED FOR OVERLAY */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero img {
@@ -39,20 +41,13 @@ header {
   display: block;
 }
 
-/* INFO GRID — STACKED */
-.info-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-/* CARDS */
+/* CARDS — BASE (MOBILE = NORMAL FLOW) */
 .card {
   background: var(--card-bg);
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  margin: 1rem;
 }
 
 /* CARD HEADERS */
@@ -64,7 +59,7 @@ header {
   font-size: 1.2rem;
 }
 
-/* WEATHER SVG — MOBILE ONLY */
+/* WEATHER SVG */
 .weather-icon {
   width: 48px;
   margin: 0.5rem 0;
@@ -80,13 +75,32 @@ footer {
   border-top: 10px solid var(--white);
 }
 
-/* MEDIA QUERY — REQUIRED FOR ASSIGNMENT */
+/* ============================= */
+/* DESKTOP OVERLAY MAGIC ✨ */
+/* ============================= */
 @media (min-width: 768px) {
-  .info-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   header {
     font-size: 2.5rem;
   }
+
+  /* FLOAT CARDS ON HERO */
+  .card {
+    position: absolute;
+    width: 280px;
+    margin: 0; /* REMOVE MOBILE MARGINS */
+  }
+
+  /* 🔹 DATA CARD — TOP LEFT */
+  .data-card {
+    top: 20px;
+    left: 20px;
+  }
+
+  /* 🔹 WEATHER CARD — BOTTOM RIGHT */
+  .weather-card {
+    bottom: 20px;
+    right: 20px;
+  }
+
 }
