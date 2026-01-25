@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Emeodu R. C. Iheanachor">
   <meta name="description" content="Discover Nigeria including culture, geography, and weather.">
-  <title>Nigeria | Place Page</title>
+  <title>Nigeria</title>
 
   <link rel="stylesheet" href="styles/place-small.css">
   <link rel="stylesheet" href="styles/place-large.css">
@@ -19,51 +19,53 @@
 
   <main>
 
-    <!-- HERO WITH OVERLAY CARDS -->
-    <section class="hero">
+  <!-- HERO WITH OVERLAY CARDS -->
+  <section class="hero">
+    <h2 class="visually-hidden">Nigeria Overview</h2>
 
-      <picture>
-        <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
-        <img src="images/nigeria-small.webp"
-             alt="Scenic view of Nigeria"
-             width="800"
-             height="400">
-      </picture>
+    <picture>
+      <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+      <img src="images/nigeria-small.webp"
+           alt="Scenic view of Nigeria"
+           width="800"
+           height="400">
+    </picture>
 
-      <!-- DATA CARD (TOP LEFT) -->
-      <section class="card data-card">
-        <h2>Data</h2>
-        <ul>
-          <li><strong>Area:</strong> 923,768 km²</li>
-          <li><strong>Capital:</strong> Abuja</li>
-          <li><strong>Population:</strong> 227 million</li>
-          <li><strong>Language:</strong> English</li>
-          <li><strong>Currency:</strong> Naira (₦)</li>
-          <li><strong>Time Zone:</strong> WAT (UTC+1)</li>
-          <li><strong>Calling Code:</strong> +234</li>
-          <li><strong>Internet TLD:</strong> .ng</li> 
-        </ul>
-      </section>
-
-      <!-- WEATHER CARD (BOTTOM RIGHT) -->
-      <section class="card weather-card">
-        <h2>Weather</h2>
-
-        <!-- SVG ICON -->
-        <img class="weather-icon"
-             src="images/weather.svg"
-             alt="Partly cloudy icon">
-
-        <ul>
-          <li><strong>Temperature:</strong> <span id="temp">30</span> °C</li>
-          <li><strong>Conditions:</strong> Partly Cloudy</li>
-          <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
-          <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
-        </ul>
-      </section>
-
+    <!-- DATA CARD (TOP LEFT) -->
+    <section class="card data-card">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 923,768 km²</li>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Population:</strong> 227 million</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Currency:</strong> Naira (₦)</li>
+        <li><strong>Time Zone:</strong> WAT (UTC+1)</li>
+        <li><strong>Calling Code:</strong> +234</li>
+        <li><strong>Internet TLD:</strong> .ng</li> 
+      </ul>
     </section>
-  </main>
+
+    <!-- WEATHER CARD (BOTTOM RIGHT) -->
+    <section class="card weather-card">
+      <h2>Weather</h2>
+
+      <!-- SVG ICON -->
+      <img class="weather-icon"
+           src="images/weather.svg"
+           alt="Partly cloudy icon">
+
+      <ul>
+        <li><strong>Temperature:</strong> <span id="temp">30</span> °C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+      </ul>
+    </section>
+
+  </section>
+</main>
+
 
   <footer>
     <p>&copy; <span id="current-year"></span> 🌼 Emeodu R. C. Iheanachor 🌼 Port Harcourt 🌼 Nigeria.</p>

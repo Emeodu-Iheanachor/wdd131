@@ -59,10 +59,21 @@ header {
   font-size: 1.2rem;
 }
 
+/* CARD HEADER ACCENT — ::after PSEUDO-ELEMENT */
+.card h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #ffffff;
+  margin-top: 6px;
+}
+
 /* WEATHER SVG */
 .weather-icon {
-  width: 48px;
+  width: 2px;
   margin: 0.5rem 0;
+  
 }
 
 /* FOOTER */
@@ -91,13 +102,13 @@ footer {
     margin: 0; /* REMOVE MOBILE MARGINS */
   }
 
-  /* 🔹 DATA CARD — TOP LEFT */
+  /* DATA CARD — TOP LEFT */
   .data-card {
     top: 20px;
     left: 20px;
   }
 
-  /* 🔹 WEATHER CARD — BOTTOM RIGHT */
+  /*  WEATHER CARD — BOTTOM RIGHT */
   .weather-card {
     bottom: 20px;
     right: 20px;
