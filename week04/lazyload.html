@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emeodu R. C. Iheanachor">
+  <meta name="description" content="Lazy Loading Images Demo">
+  <title>Lazy Load Images</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/lazyload.css">
+
+  <!-- External JS -->
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <h1>Native Lazy Loading Demo</h1>
+
+    <!-- Portrait Images (400 x 600+) -->
+    <img src="https://via.placeholder.com/400x650?text=Image+1" 
+         alt="Placeholder Image 1" 
+         width="400" height="650" 
+         loading="lazy">
+
+    <img src="https://via.placeholder.com/400x700?text=Image+2" 
+         alt="Placeholder Image 2" 
+         width="400" height="700" 
+         loading="lazy">
+
+    <img src="https://via.placeholder.com/400x750?text=Image+3" 
+         alt="Placeholder Image 3" 
+         width="400" height="750" 
+         loading="lazy">
+
+    <img src="https://via.placeholder.com/400x800?text=Image+4" 
+         alt="Placeholder Image 4" 
+         width="400" height="800" 
+         loading="lazy">
+
+    <img src="https://via.placeholder.com/400x850?text=Image+5" 
+         alt="Placeholder Image 5" 
+         width="400" height="850" 
+         loading="lazy">
+
+    <img src="https://via.placeholder.com/400x900?text=Image+6" 
+         alt="Placeholder Image 6" 
+         width="400" height="900" 
+         loading="lazy">
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Lazy Load Assignment</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>

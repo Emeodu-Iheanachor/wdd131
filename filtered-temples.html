@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Emeodu R. C. Iheanachor">
+    <meta name="description" content="Explore a comprehensive photo album of temples from around the world, now dynamically filtered using JavaScript.">
+
+    <title>Filtered Temple Album - WDD131 Project</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-larger-temples.css">
+
+    <!-- JS -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger">&#9776;</button>
+        <nav id="navMenu">
+            <button id="home">Home</button>
+            <button id="old">Old</button>
+            <button id="new">New</button>
+            <button id="large">Large</button>
+            <button id="small">Small</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="temple-cards" class="gallery">
+            <!-- Temple cards will be dynamically generated here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Emeodu R. C. Iheanachor | Port Harcourt | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

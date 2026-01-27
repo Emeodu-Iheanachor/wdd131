@@ -1,0 +1,55 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+/* MAIN LAYOUT */
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+/* IMAGE STYLING */
+img {
+  display: block;            /* One column center */
+  margin: 2rem auto;
+  width: 400px;
+  max-width: 100%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  background-color: #000;
+}
+
+/* FADE FROM BLACK ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  font-size: 0.9rem;
+}
