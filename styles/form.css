@@ -1,0 +1,74 @@
+:root {
+  --primary: #1f3a5f;
+  --accent: #e63946;
+  --background: #f8f9fa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+header, footer {
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label, legend {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.rating label {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #162c47;
+}
+
+.required {
+  color: var(--accent);
+}
+
+.confirmation {
+  text-align: center;
+}

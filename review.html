@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+
+<main class="confirmation">
+  <h1>Thank You!</h1>
+  <p>Your review has been submitted successfully.</p>
+  <p>Total reviews submitted: <strong><span id="counter"></span></strong></p>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> | Product Review</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
