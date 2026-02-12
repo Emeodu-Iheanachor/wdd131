@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore transportation, attractions, and food in Lagos with Lagos City Guide. A responsive and dynamic travel resource created by Emeodu R. C. Iheanachor.">
+  <meta name="author" content="Emeodu R. C. Iheanachor">
+  <title>Lagos City Guide | Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+
+    <div class="logo">
+      <a href="index.html">
+        <h1>Lagos City Guide</h1>
+      </a>
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <img src="images/lagos-skyline.jpg"
+       alt="Lagos city skyline view"
+       loading="lazy">
+  <div class="hero-text">
+    <h2>Discover the Energy of Lagos</h2>
+    <p>Your trusted guide to exploring Nigeria’s most vibrant city.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Welcome to Lagos</h2>
+  <p>
+    Lagos is a dynamic city known for its culture, food, and attractions.
+    This guide provides useful information about transportation, must-visit
+    places, and dining experiences.
+  </p>
+</section>
+
+<section>
+  <h2>Featured Attractions</h2>
+  <div id="attractionsContainer" class="card-container"></div>
+</section>
+
+<section>
+  <h2>Leave a Review</h2>
+
+  <form id="reviewForm">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" required>
+
+    <label for="place">Favorite Place</label>
+    <input type="text" id="place" required>
+
+    <label for="rating">Rating</label>
+    <select id="rating" required>
+      <option value="">Select</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Average</option>
+      <option value="2">2 - Fair</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <div id="reviewMessage"></div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Lagos City Guide | Emeodu R. C. Iheanachor</p>
+  <p><a href="references.html">References</a></p>
+  <p><a href="https://lagosguide.ng/">Lagos Guide</a></p>
+</footer>
+
+</body>
+</html>
