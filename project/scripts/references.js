@@ -30,4 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
     menuBtn.setAttribute("aria-expanded", isOpen);
   });
 
+
+
+
+
+const footer = document.querySelector('footer');
+const paragraphs = Array.from(footer.querySelectorAll('p'));
+
+// Keep first paragraph (copyright)
+const copyright = paragraphs.shift();
+
+// Collect all remaining content
+const links = paragraphs.map(p => p.innerHTML.trim());
+
+// Create one new paragraph with all links separated by " | "
+const newLinksP = document.createElement('p');
+newLinksP.innerHTML = links.join(' | ');
+
+// Clear footer and append
+footer.innerHTML = '';
+footer.appendChild(copyright);
+footer.appendChild(newLinksP);
+
+
+
+
 });

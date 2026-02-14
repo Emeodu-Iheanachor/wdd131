@@ -65,6 +65,7 @@ header {
 
 .logo h1 {
   font-size: 1.5rem;
+  color: white;
 }
 
 nav {
@@ -260,3 +261,9 @@ footer a:hover {
     padding: 2rem;
   }
 }
+
+
+
+
+
+

@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
 const footer = document.querySelector('footer');
 const paragraphs = Array.from(footer.querySelectorAll('p'));
 
