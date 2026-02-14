@@ -53,6 +53,27 @@ footer.appendChild(copyright);
 footer.appendChild(newLinksP);
 
 
+/* ==========================
+     HERO IMAGE BOUNCE EFFECT
+     ========================== */
+  const heroSection = document.querySelector(".hero");
+  if (heroSection) {
 
+    // Only simulate bounce on desktop (mobile has native bounce)
+    if (window.innerWidth >= 768) {
+      heroSection.addEventListener("scroll", () => {
+        const scrollTop = heroSection.scrollTop;
+        const maxScroll = heroSection.scrollHeight - heroSection.clientHeight;
+
+        if (scrollTop <= 0) {
+          heroSection.style.transform = "translateY(5px)";
+          setTimeout(() => heroSection.style.transform = "translateY(0)", 150);
+        } else if (scrollTop >= maxScroll) {
+          heroSection.style.transform = "translateY(-5px)";
+          setTimeout(() => heroSection.style.transform = "translateY(0)", 150);
+        }
+      });
+    }
+  }
 
 });
